@@ -19,12 +19,12 @@ function singleRound(userSelect, pcSelect) {
   userSelect = userSelect.toLowerCase();
   pcSelect = getComputerChoice();
   console.log(pcSelect);
+}
 
-  if (userSelect === pcSelect) {
-    console.log('we tied');
-  } else if ((userSelect === 'paper' && pcSelect === 'rock') || (userSelect === 'rock' && pcSelect === 'scissor') || (userSelect === 'scissor' && pcSelect === 'paper')) {
-    console.log(`congratulations you win, you chose ${userSelect} and i chose ${pcSelect}`);
+function game() {
+  if (userScore > pcScore) {
+    console.log('CONGRATULATIONS YOU BEAT ME');
   } else {
-    console.log(`too bad, i beat you! , you chose ${userSelect} and i chose ${pcSelect}`);
+    console.log('HA HA HA YOU LOST');
   }
 }
