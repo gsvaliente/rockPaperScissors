@@ -43,6 +43,9 @@ function game() {
       userScore += 1;
     }
     console.log(userScore, pcScore);
+    if (userScore === 3 || pcScore === 3) {
+      break;
+    }
   }
   if (userScore === pcScore) {
     console.log('WE TIED');
